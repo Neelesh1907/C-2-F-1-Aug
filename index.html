@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav>
+        <p>Library System</p>
+        <ul>
+            <li><a href="#book-table">Books</a></li>
+            <li><a href="#form">Register</a></li>
+            <li>Contact Us</li>
+            <li>Logout</li>
+        </ul>
+    </nav>
+    <div id="book-table">
+        <h2>Books</h2>
+        <table id="details">
+            <tr>
+                <th>Book ID</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Genre</th>
+                <th>Availability</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>
+                    <h4 class="book-name">Ten Kings</h4>
+                    <table class="nested-table">
+                        <tr>
+                            <td>Publication Date: 2000</td>
+                        </tr>
+                        <tr>
+                            <td>Page Count: 250</td>
+                        </tr>
+                        <tr>
+                            <td>ISBN: 123-4567890123</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>Arpit Singhal</td>  
+                <td>Mythology</td>
+                <td>Available</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>
+                    <h4 class="book-name">Immortals of Meluha</h4>
+                    <table class="nested-table">
+                        <tr>
+                            <td>Publication Date: 2011</td>
+                        </tr>
+                        <tr>
+                            <td>Page Count: 550</td>
+                        </tr>
+                        <tr>
+                            <td>ISBN: 123-4511890167</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>Amish Tripathi</td>  
+                <td>Fiction</td>
+                <td>Not Available</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>
+                    <h4 class="book-name">Inception</h4>
+                    <table class="nested-table">
+                        <tr>
+                            <td>Publication Date: 1970</td>
+                        </tr>
+                        <tr>
+                            <td>Page Count: 750</td>
+                        </tr>
+                        <tr>
+                            <td>ISBN: 123-4567560789</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>Christofer Ben</td>  
+                <td>Drama</td>
+                <td>Available</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>
+                    <h4 class="book-name">The Lost Key</h4>
+                    <table class="nested-table">
+                        <tr>
+                            <td>Publication Date: 2002</td>
+                        </tr>
+                        <tr>
+                            <td>Page Count: 650</td>
+                        </tr>
+                        <tr>
+                            <td>ISBN: 123-4427810156</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>Ayush Joshi</td>  
+                <td>Fiction</td>
+                <td>Available</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>
+                    <h4 class="book-name">The Lost Horizon</h4>
+                    <table class="nested-table">
+                        <tr>
+                            <td>Publication Date: 1995</td>
+                        </tr>
+                        <tr>
+                            <td>Page Count: 450</td>
+                        </tr>
+                        <tr>
+                            <td>ISBN: 123-4554830156</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>Chris Harris</td>  
+                <td>Mythology</td>
+                <td>Not Available</td>
+            </tr>
+        </table>
+    </div>
+    <div id="form">
+        <h2>Register</h2>
+        <form>
+            <label for="fname">First Name:</label>
+            <br>
+            <input id="fname" type="text" required/>
+            <br>
+            <label for="lname">Last Name:</label>
+            <br>
+            <input id="lname" type="text" required/>
+            <br>
+            <label for="dob">Date Of Birth:</label>
+            <br>
+            <input id="dob" type="date" required/>
+            <br>
+            <label for="age">Age:</label>
+            <br>
+            <input id="age" type="number" min="5" max="100" required/>
+            <br>
+            <label for="email">Email:</label>
+            <br>
+            <input id="email" type="email" required/>
+            <br>
+            <label for="password">Password:</label>
+            <br>
+            <input id="password" type="password" required/>
+            <br>
+            <label for="cpassword">Confirm Password:</label>
+            <br>
+            <input id="cpassword" type="password" required/>
+            <br>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
